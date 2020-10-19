@@ -1,6 +1,6 @@
 # azure-signalr2
 
-This is the sample project for my post [Connecting Microsoft SignalR with Angular]().
+This is the sample project for my post [Connecting Microsoft SignalR with Angular](https://rhythmandbinary.com/post/2020-10-16-connecting-microsoft-signalr-with-angular).
 
 This project connects the Azure SingalR Service to an Angular application.
 
