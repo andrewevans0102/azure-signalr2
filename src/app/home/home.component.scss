@@ -1,0 +1,121 @@
+.home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Cinzel", serif;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+
+    align-items: center;
+    h1 {
+      font-family: "Cinzel", serif;
+    }
+
+    &--wrapper {
+      display: flex;
+      justify-content: space-evenly;
+
+      article {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px;
+
+        p {
+          border: solid;
+          padding: 20px;
+          font-size: 20px;
+          font-family: "Cinzel", serif;
+
+          &:hover {
+            color: purple;
+          }
+        }
+
+        button {
+          height: 80%;
+          width: 200px;
+          margin-bottom: 20px;
+          font-family: "Cinzel", serif;
+        }
+      }
+    }
+  }
+
+  &__messages {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Cinzel", serif;
+
+    &--input {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      font-family: "Cinzel", serif;
+
+      span {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      &-button {
+        width: 100%;
+        font-family: "Cinzel", serif;
+        margin: 10px;
+      }
+    }
+
+    &--history {
+      display: flex;
+      // width: 800px;
+      width: 100%;
+      border: solid;
+      margin: 5px;
+      font-family: "Cinzel", serif;
+
+      &-sender {
+        min-width: 200px;
+        color: blue;
+        font-size: 20px;
+        margin-top: 5px;
+        height: 100%;
+        border-right: solid;
+        text-align: center;
+        padding: 10px;
+        font-family: "Cinzel", serif;
+      }
+
+      &-body {
+        text-align: left;
+        min-width: 200px;
+        color: orange;
+        padding: 10px;
+        font-family: "Cinzel", serif;
+      }
+    }
+  }
+
+  h1 {
+    margin: 20px;
+    font-size: 40px;
+  }
+
+  &__profile {
+    display: flex;
+    margin: 20px;
+
+    &--center {
+      margin: 20px;
+    }
+  }
+}

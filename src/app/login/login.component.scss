@@ -1,0 +1,14 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Cinzel", serif;
+  margin: 200px;
+
+  &__button {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Cinzel", serif;
+  }
+}

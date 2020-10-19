@@ -1,0 +1,16 @@
+<div class="login">
+  <h1>Azure with SignalR demo</h1>
+  <mat-form-field class="example-full-width">
+    <mat-label>Enter Name</mat-label>
+    <input matInput placeholder="name" [(ngModel)]="name" />
+  </mat-form-field>
+  <button
+    mat-raised-button
+    color="primary"
+    type="submit"
+    id="login-button"
+    (click)="login()"
+  >
+    Login
+  </button>
+</div>

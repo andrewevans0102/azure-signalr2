@@ -1,0 +1,53 @@
+<main class="home">
+  <header class="home__header">
+    <h1>Angular with SignalR demo</h1>
+    <section class="home__header--wrapper">
+      <article>
+        <p>Logged in as {{ name }}</p>
+        <p *ngIf="loginError$ | async as loginError">{{ loginError }}</p>
+      </article>
+      <article>
+        <button
+          mat-raised-button
+          color="primary"
+          type="submit"
+          id="login-button"
+          (click)="logout()"
+        >
+          Logout
+        </button>
+      </article>
+    </section>
+  </header>
+  <section class="home__messages">
+    <article class="home__messages--input">
+      <mat-form-field>
+        <input matInput [(ngModel)]="messageInput" placeholder="message" />
+      </mat-form-field>
+      <span>
+        <button
+          mat-raised-button
+          color="primary"
+          (click)="send()"
+          class="home__messages--input-button"
+        >
+          Send
+        </button>
+        <button
+          mat-raised-button
+          color="primary"
+          (click)="clear()"
+          class="home__messages--input-button"
+        >
+          clear
+        </button>
+      </span>
+    </article>
+    <article *ngIf="messages$ | async as messages">
+      <div *ngFor="let m of messages" class="home__messages--history">
+        <span class="home__messages--history-sender">{{ m.sender }}</span>
+        <p class="home__messages--history-body">{{ m.body }}</p>
+      </div>
+    </article>
+  </section>
+</main>
